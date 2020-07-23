@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>响应式星巴克</title>
+    <link rel="stylesheet" href="iconfont.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--分模块
+        1.pc端：左边和右边
+        2.ipad端:
+        3.手机端
+    -->
+    <!--误区：分为pc端、ipad端和手机端，但不是写成三个htmL文件
+        如果是显示pc端，就通过媒体查询吧ipad端和手机端隐藏起来    
+    -->
+    <div class="box">
+        <!--pc端左边-->
+        <div class="leftContent fl">
+            <!--顶部的nav-->
+            <div class="nav clean">
+                <div class="navList">
+                    <div class="logo">
+                        <img src="https://www.starbucks.com.cn/assets/images/logo.svg" alt="无法显示">
+                    </div>    
+                    <div>门店</div>
+                    <div>我的账户</div>
+                    <div>菜单</div>
+                    <!--nav右边的菜单icon-->
+                    <div class="iconfont icon-menu menuIcon"></div>
+                </div>
+            </div>
+            
+            <!--登陆注册-->
+            <div class="loginBox">
+                <div class="title">心情惬意，来杯咖啡吧 ☕</div>
+                <div class="login fl tip">
+                    <!--图片-->
+                    <span class="loginIcon">
+                        <img src="https://www.starbucks.com.cn/assets/icons/icon-account.svg" alt="">
+                    </span>
+                    登陆
+                </div>
+                <div class="register fl tip">
+                    注册
+                </div>
+            </div>
+        </div>
+
+        <!--全局右边-->       
+        <div class="rightContent fl">
+            <!--右边ipad端-->
+            <div class="rightContent-menu">
+                <div class="nav clean">
+                    <div class="navList">
+                        <div class="logo">
+                            <img src="https://www.starbucks.com.cn/assets/images/logo.svg" alt="无法显示">
+                        </div>    
+                        <div>门店</div>
+                        <div>我的账户</div>
+                        <div>菜单</div>
+                        <!--nav右边的菜单icon-->
+                        <div class="iconfont icon-menu menuIcon"></div>
+                    </div>
+                </div>
+                <!--登陆注册-->
+                <div class="title">心情惬意，来杯咖啡吧 ☕</div>
+                <div class="login fl tip">
+                    <!--图片-->
+                    <span class="loginIcon">
+                        <img src="https://www.starbucks.com.cn/assets/icons/icon-account.svg" alt="">
+                    </span>
+                    登陆
+                </div>
+                <div class="register fl tip">
+                    注册
+                </div>
+            </div>
+            <!--手机端（移动）下面的菜单栏-->
+            <ul class="tabBar">
+                <li class="aaa">
+                    <span class="iconfont icon-house mobileIcon"></span>
+                    <div>主页</div>
+                </li>
+                <li class="bbb">
+                    <span class="iconfont icon-mendian mobileIcon"></span>
+                    <div>门店</div>
+                </li>
+                <li class="bbb">
+                    <span class="iconfont icon-yonghu mobileIcon"></span>
+                    <div>我的账号</div>
+                </li>
+                <li class="bbb">
+                    <span class="iconfont icon-menu mobileIcon"></span>
+                    <div>菜单</div>
+                </li>
+                <li class="bbb">
+                    <span class="iconfont icon-shenglvehao mobileIcon"></span>
+                    <div>更多</div>
+                </li>
+            </ul>
+            <div class="mobile-title">心情惬意，来杯咖啡吧 ☕</div>
+            
+            <!--轮播盒子-->
+            <div class="banner">
+                <img src="https://www.starbucks.com.cn//assets/images/featured/2020cny/kv-cny.jpg" alt="">
+                <img src="https://www.starbucks.com.cn//assets/images/featured/2020cny/kv-cny-icecream.jpg" alt="">
+                <img src="https://www.starbucks.com.cn//assets/images/featured/2019autumn2/homepage-mix.jpg" alt="">
+                <img src="https://www.starbucks.com.cn//assets/images/featured/2020cny/cny-promotion.jpg" alt="">
+                <div class="arrow">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <!--商品推荐盒子-->
+            <div class="suggestBox clean">
+                <div>
+                    <img src="https://www.starbucks.com.cn//images/pages/tmall-0106-cn.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://www.starbucks.com.cn//images/pages/starbucks-design-studio-web-china.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://www.starbucks.com.cn//images/pages/homepage-career-cn.jpg" alt="">
+                </div>
+            </div>
+            <!--星享俱乐部-->
+            <div class="club">
+                <!--左边-->
+                <div class="fl">
+                    <div class="detailBox">
+                        <div class="barShare">
+                            星享俱乐部
+                        </div>
+                        <div class="detail">开启您的星享之旅，星星越多、会员等级越高、好礼越丰富。
+                            <span class="knowMore">了解更多</span>
+                        </div>
+                        <div class="clean">
+                            <div class="mobile-btn">
+                                <div class="fl detail-btn">登陆</div>
+                                <div class="fl detail-btn">注册</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--右边-->
+                <div class="fl club-rightContent clean">
+                    <div class="detail-imgBox">
+                        <img src="https://www.starbucks.com.cn//assets/images/logo-msr-new.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <!--星巴克精选-->
+            <div class="special-ticket">
+                <div class="special-content">
+                    <div class="barShare">星巴克精选</div>
+                    <div class="detail">在星巴克天猫旗舰店发现更多咖啡心意</div>
+                    <ul class="ticket">
+                        <li>
+                            <div class="ticketBox">
+                                <img src="https://www.starbucks.com.cn//assets/images/homepage/tmall-card-01.png" alt="">
+                            </div>
+                            <div class="ticketTitle">会员星礼包</div>
+                            <div class="ticket-detail">星享卡新升级</div>
+                            <div class="ticket-detail">更多心意好礼</div>
+                            <div class="ticket-knowMore">了解更多</div>
+                        </li>
+                        <li>
+                            <div class="ticketBox">
+                                <img src="https://www.starbucks.com.cn//assets/images/homepage/tmall-card-02.png" alt="">
+                            </div>
+                            <div class="ticketTitle">星礼卡</div>
+                            <div class="ticket-detail">用一份心礼</div>
+                            <div class="ticket-detail">让心意相随</div>
+                            <div class="ticket-knowMore">了解更多</div>
+                        </li>
+                        <li>
+                            <div class="ticketBox">
+                                <img src="https://www.starbucks.com.cn//assets/images/homepage/tmall-eticket.png" alt="">
+                            </div>
+                            <div class="ticketTitle">电子产品卷</div>
+                            <div class="ticket-detail">心意</div>
+                            <div class="ticket-detail">从这一杯开始</div>
+                            <div class="ticket-knowMore">了解更多</div>
+                        </li>
+                        <li>
+                            <div class="ticketBox">
+                                <img src="https://www.starbucks.com.cn//assets/images/homepage/tmall-reserve.png" alt="">
+                            </div>
+                            <div class="ticketTitle">咖啡生活</div>
+                            <div class="ticket-detail">星巴克</div>
+                            <div class="ticket-detail">用心之作</div>
+                            <div class="ticket-knowMore">了解更多</div>
+                        </li>
+                    </ul>   
+                </div>
+                
+            </div>
+            <!--咖啡星讲堂-->
+            <div class="star">
+                <div class="star-content">
+                    <div class="barShare">1912 派克街 | 咖啡星讲堂</div>
+                    <div class="detail">了解更多星巴克咖啡文化</div>
+                    <ul class="star-ul">
+                        <span class="iconfont icon-right"></span>
+                        <li>
+                            <div class="star-img1 star-img">
+                                <!--这里设置背景图片，不用img标签-->
+                                <span>咖啡知识</span>
+                            </div>
+                            <div class="star-detail">咖啡的起源与培植</div>
+                        </li>
+                        <li>
+                            <div class="star-img2 star-img">
+                                <!--这里设置背景图片，不用img标签-->
+                                <span>咖啡品鉴</span>
+                            </div>
+                            <div class="star-detail">咖啡烘焙</div>
+                        </li>
+                        <li>
+                            <div class="star-img3 star-img">
+                                <!--这里设置背景图片，不用img标签-->
+                                <span>咖啡知识</span>
+                            </div>
+                            <div class="star-detail">咖啡调制</div>
+                        </li>
+                        <li>
+                            <div class="star-img4 star-img">
+                                <!--这里设置背景图片，不用img标签-->
+                                <span>咖啡品鉴</span>
+                            </div>
+                            <div class="star-detail">手冲咖啡</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--给div设置高度，程开内容-->
+            <div class="space"></div>
+        </div> 
+        
+    </div>
+</body>
+<!--引入js文件-->
+<script src="index.js"></script>
+</html>

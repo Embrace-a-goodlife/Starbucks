@@ -1,0 +1,497 @@
+/*去除默认样式*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html{
+	font-size: 10px;
+}
+/*向右浮动*/
+.fr{
+    float: right;
+}
+/*向左浮动*/
+.fl{
+    float: left;
+}
+/*清除浮动的一种方式*/
+.clean{
+    overflow: hidden;
+}
+/*图片默认是占据父元素100%*/
+img{
+    display: block;
+    width: 100%;
+
+}
+.box{
+    width: 100%;
+    /*css3:直接填满页面的高度*/
+    height: 100vh;
+}
+/*左边大模块*/
+.leftContent{
+    padding: 2.4rem;
+    /*cacl计算宽高时，+ -号之间必须有空格，否则处理代码过程中，把他们识别为一个变量从而导致没有效果*/
+    width: calc(30% - 4.8rem);
+    height: calc(100% - 4.8rem);
+    /*border: 1px solid greenyellow;*/
+    position: relative;
+}
+/*顶部的nav*/
+/*.nav{
+    position: relative;
+}*/
+.logo{
+    width: 3.6rem;
+}
+.navList>div {
+    float: left;
+    line-height:3.6rem ;
+    font-weight: 700;
+    margin-right: 2rem;
+}
+.menuIcon{
+    font-size: 2.4rem;
+    position: absolute;
+    top: 2.4rem;
+    right: 0.6rem;
+}
+/*登陆的注册模块*/
+.loginBox{
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    top: 0;
+    margin: auto 0;
+
+}
+.title{
+    width: 75%;
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+.loginIcon{
+    display: inline-block;
+    width: 2.8rem;
+    height: 2.8rem;
+    /*让图片居中*/
+    vertical-align: middle;
+}
+/*登陆*/
+.login{
+    margin-right: 2.4rem;
+    line-height: 2.8rem;
+}
+/*注册*/
+.register{
+    height: 2.8rem;
+    line-height: 2.8rem;
+    padding:0.05rem 1.2rem;
+    border: 0.1rem solid #1ab172;
+    border-radius: 4.8rem;
+
+}
+.tip{
+    font-size: 1.6rem;
+    color: #1ab172;
+}
+/*右边大模块*/
+.rightContent{
+    width: calc(70% - 0.3rem);
+    height: 100vh;
+    border-left: 0.3rem solid rgba(7, 17, 27, 0.1);
+    /*原来高度是100%，但超出部分回影响显示*/
+    overflow: auto;
+}
+
+/*ipad端样式*/
+.rightContent-menu{
+    padding: 2rem ;
+    margin-bottom: 3rem;
+    display: none;
+}
+/*.rightContent-menu>.menuIcon{
+    position: absolute;
+    z-index: 999;
+    top: 6px;
+    right: 0px;
+}*/
+/**/
+.tabBar{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    position: fixed;
+    left:0 ;
+    bottom: 0;
+    /*给个层级*/
+    z-index: 1000;
+    /*弹性盒子*/
+    display: flex;
+    width: 100%;
+    background: white;
+    display: none;
+}
+.tabBar>li{
+    text-align: center;
+    flex: 1;
+}
+/*交集选择器*/
+.tabBar>li.aaa {
+    color: #00A862;
+}
+.tabBar>li.bbb {
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 1rem;
+}
+.icon-house{
+    font-size: 2.2rem;
+    color: #00A862;
+}
+.icon-mendian, .icon-menu, .icon-shenglvehao, .icon-yonghu{
+    font-size: 2.2rem;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.mobile-title{
+    font-size: 2.7rem;
+    font-weight: 700;
+    padding: 1.6rem;
+    margin-left: 0.4rem;
+    display: none;
+}
+
+
+.banner{
+    position: relative;
+}
+/*轮播图默认样式*/
+.banner>img{
+    transition: 5s;
+    display: none;
+}
+.banner>img:first-child{
+    display: block;
+}
+.left, .right{
+    position: absolute;
+    top:50%;
+    width: 5rem;
+    height: 5rem;
+    border-right: 0.3rem solid black;
+    border-top: 0.3rem solid black;
+    opacity: 0.3;
+    display: none;
+    transition: 0.6s;
+}
+.banner:hover .left{
+    display: block;
+}
+.banner:hover .right{
+    display: block;
+}
+
+.left{
+    left: 2rem;
+    transform:rotate(225deg);
+}
+.right{
+    right: 2rem;
+    transform:rotate(45deg);
+}
+
+.suggestBox{
+    background: rgba(247,247,247);
+    padding: 2.4rem;
+
+}
+.suggestBox>div {
+    /*因为没有宽度（图片默认宽度是100%），没有明显的效果*/
+    float: left;
+    width: calc((100% - 4.8rem) / 3);
+    margin-right: 2.4rem;
+    box-shadow:0 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2) ;
+    /*加上过度*/
+    transition: all 1 ease;
+    
+}
+.suggestBox>div:last-child{
+    margin-right: 0;
+}
+.suggestBox>div:hover{
+    transform: translateY(-0.4rem);
+    box-shadow: 0rem 0rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+/*星享俱乐部*/
+.club{
+    /*清楚浮动*/
+    overflow: hidden;
+}
+.club>div {
+    width: 50%;
+    /*margin: 0 auto;*/
+    padding-top: 3rem 0;
+}
+.detailBox{
+    width: 60%;
+    margin: 0 auto ;
+    margin-bottom: 3rem;
+}
+.barShare{
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+    padding-top: 2rem ;
+}
+.detail{
+    color: rgba(0, 0, 0, 0.56);
+    line-height: 3rem;
+    margin: 0 0 2.4rem;
+}
+.knowMore{
+    display: block;
+    color: #C2A661;
+}
+.club-rightContent{
+    margin-top:8.5rem;
+}
+.detail-btn{
+    border: 0.1rem solid #00A862;
+    border-radius: 4.8rem;
+    box-sizing: border-box;
+    color: #00A862;
+    padding: 0.6rem 1.8rem;
+    margin-left: 0.8rem;
+}
+.detail-imgBox{
+    width: 50%;
+    margin: 0 auto;
+}
+.special-ticket{
+    text-align: center;
+    padding:3.6rem 0 ;
+    background: rgb(247,247,247);
+    
+}
+.special-content{
+    max-width: 76.8rem;
+    margin: 0 auto;
+}
+.ticket{
+    margin-top: 6rem;
+    padding: 0.5rem;
+}
+/*清除浮动*/
+.special-ticket::after{
+    content: '';
+    /*占位置*/
+    display: block;
+    /*清除浮动*/
+    clear: both;
+}
+
+.ticket>li {
+    box-shadow:0 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.12) ;
+    float: left;
+    margin-right: 3rem;
+    padding: 5rem 1.8rem 3rem;
+    width: calc((100% - 9rem) / 4 - 3.6rem);
+    position: relative;
+    transition: all 1 ease;
+}
+.ticket>li:hover{
+    transform: translateY(-0.4rem);
+    box-shadow: 0rem 0rem 0.3rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+.ticket>li:last-child{
+    margin: 0;
+}
+
+.ticketTitle{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+.ticket-detail{
+    color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.5rem;
+}
+.ticket-knowMore{
+    font-size: 1.6rem;
+    color: #C2A661;
+    margin-top:1.8rem;
+}
+
+/*对图片进行处理*/
+.ticketBox{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20%;
+    height: 7.2rem;
+}
+.ticketBox>img {
+    margin: 0 auto;
+    width: auto;
+    height: 100%;
+}
+.star{
+    background: #FDFDFD;
+    padding: 3.6rem 0;
+    text-align: center;
+    /*隐藏超出部分*/
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.star-content{
+    margin:  0 auto;
+    width: 76.8rem;
+}
+.star-ul{
+    width: 122rem;
+    overflow: hidden;
+    
+}
+.star-ul>li {
+    float: left;
+    margin-right: 2rem;
+    width: calc((100% - 6rem) / 4 - 0.2rem);
+    border: 0.1rem solid rgba(0, 0, 0, 0.12);
+    box-shadow:0 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.12) ;
+    transition: all 1 ease;
+}
+.star-ul>li:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0rem 0rem 0.3rem 0.2rem rgba(0, 0, 0, 0.12);
+}
+.star-ul>li:last-child{
+    margin: 0;
+}
+/*背景图片*/
+.star-img{
+    height: 16.8rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.star-img1{
+    background-image: url(https://www.starbucks.com.cn//assets/images/homepage/coffeehouse-coffee-cultivation-kv.jpg);
+}
+.star-img2{
+    background-image: url(https://www.starbucks.com.cn/assets/images/homepage/coffeehouse-4-fundamentals-kv.jpg);
+}
+.star-img3{
+    background-image: url(https://www.starbucks.com.cn/assets/images/homepage/coffeehouse-roast-story-kv.jpg);
+}
+.star-img4{
+    background-image: url(https://www.starbucks.com.cn/assets/images/homepage/coffeehouse-pour-over-kv.jpg);
+}
+.star-img>span {
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    background: #C2A661;
+    color: white;
+    padding: 0.4rem 1.2rem;
+    font-size: 1.4rem;  
+}
+.star-detail{
+    padding: 1.5rem 0; 
+}
+.icon-right{
+    position: absolute;
+    left: 94%;
+    top: 56%;
+    padding: 0.6rem;
+    border-radius: 50%;
+    background: white;
+    font-weight: bold;
+    /*给个层级*/
+    z-index:999;
+}
+
+
+/*ipad端响应式布局*/
+@media screen and (min-width:678px) and (max-width:1140px){
+    .leftContent{
+        display: none;
+    }
+    /*ipad端，右边宽度变成100%*/
+    .rightContent{
+        width: 100%;
+        border: 0;
+    }
+    .rightContent-menu{
+        display: block;
+    }
+    
+}
+
+/*移动端响应布局*/
+@media screen and (max-width:678px){
+    .leftContent{
+        display: none;
+    }
+    /*移动端，右边宽度变成100%*/
+    .rightContent{
+        width: 100%;
+        border: 0;
+    }
+    .rightContent-menu{
+        display: none;
+    }
+    .mobile-title{
+        display: block;
+    }
+    .tabBar{
+        display: flex;
+    }
+    /*商品推荐盒子*/
+    .suggestBox>div {
+        width: 100%;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+    }
+    /*星享俱乐部*/
+    .club>div{
+        width: 100%;
+        text-align: center;
+    }
+    .mobile-btn{
+        display: inline-block;        
+    }
+    .club-rightContent{
+        margin: 0;
+        padding: 2rem 0;
+    }
+    /*星巴克精选*/
+    .ticket>li{
+        width: calc((100% - 30px ) / 2 - 36px);
+        margin-right: 3rem;
+        margin-bottom: 7.5rem;
+    }
+    .ticket>li:nth-child(2n){
+        margin: 0;
+    }
+    .ticket>li:nth-child(3){
+        margin-bottom: 0;
+    }
+    .star-content{
+        text-align: center;
+        width: 100%;
+    }
+    .space{
+        width: 100%;
+        height: 8rem;
+        background: rgba(247,247,247);
+    }
+}
+
+
